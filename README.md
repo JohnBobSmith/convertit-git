@@ -1,4 +1,4 @@
-# ConvertIt!
+# ConvertIt! - V0.1
 ## Convert between common systems of measurement
 
 ConvertIt! is a simple, command line application designed to allow users to convert between common systems and 
