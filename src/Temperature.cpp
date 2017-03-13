@@ -25,7 +25,7 @@ float Temperature::convFahrToCelcius(float degreesF)
     }
 }
 
-float Temperature::convCelciusToFahrAndPrint(float degreesC, int useUnitSymbols)
+void Temperature::convCelciusToFahrAndPrint(float degreesC, int useUnitSymbols)
 {
     float result = convCelciusToFahr(degreesC);
     if (useUnitSymbols == 1) {
@@ -36,7 +36,7 @@ float Temperature::convCelciusToFahrAndPrint(float degreesC, int useUnitSymbols)
     }
 }
 
-float Temperature::convFahrToCelciusAndPrint(float degreesF, int useUnitSymbols)
+void Temperature::convFahrToCelciusAndPrint(float degreesF, int useUnitSymbols)
 {
     float result = convFahrToCelcius(degreesF);
     if (useUnitSymbols == 1) {

@@ -35,7 +35,7 @@ float Imperial::convInchesToCentimetres(float inches)
     return cm;
 }
 
-float Imperial::convAcresToHectaresAndPrint(float acres, int useUnitSymbols)
+void Imperial::convAcresToHectaresAndPrint(float acres, int useUnitSymbols)
 {
     float result = convAcresToHectares(acres);
     if (useUnitSymbols == 1) {
@@ -45,7 +45,7 @@ float Imperial::convAcresToHectaresAndPrint(float acres, int useUnitSymbols)
     }
 }
 
-float Imperial::convMilesToKilometersAndPrint(float miles, int useUnitSymbols)
+void Imperial::convMilesToKilometersAndPrint(float miles, int useUnitSymbols)
 {
     float result = convMilesToKilometers(miles);
     if (useUnitSymbols == 1) {
@@ -55,7 +55,7 @@ float Imperial::convMilesToKilometersAndPrint(float miles, int useUnitSymbols)
     }
 }
 
-float Imperial::convYardsToMetersAndPrint(float yards, int useUnitSymbols)
+void Imperial::convYardsToMetersAndPrint(float yards, int useUnitSymbols)
 {
     float result = convYardsToMeters(yards);
     if (useUnitSymbols == 1) {
@@ -65,7 +65,7 @@ float Imperial::convYardsToMetersAndPrint(float yards, int useUnitSymbols)
     }
 }
 
-float Imperial::convFeetToMetersAndPrint(float feet, int useUnitSymbols)
+void Imperial::convFeetToMetersAndPrint(float feet, int useUnitSymbols)
 {
     float result = convFeetToMeters(feet);
     if (useUnitSymbols == 1) {
@@ -75,7 +75,7 @@ float Imperial::convFeetToMetersAndPrint(float feet, int useUnitSymbols)
     }
 }
 
-float Imperial::convInchesToCentimetresAndPrint(float inches, int useUnitSymbols)
+void Imperial::convInchesToCentimetresAndPrint(float inches, int useUnitSymbols)
 {
     float result = convInchesToCentimetres(inches);
     if (useUnitSymbols == 1) {

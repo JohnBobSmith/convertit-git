@@ -9,3 +9,6 @@ OBJ = main.o Metric.o Imperial.o Temperature.o
 
 convertit: $(OBJ)
 	g++ -o $@ $^ $(CXXFLAGS)
+
+clean:
+	rm -f convertit *.o

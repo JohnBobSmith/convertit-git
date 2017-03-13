@@ -4,11 +4,14 @@
 class Imperial
 {
     public:
-        float convAcresToHectaresAndPrint(float acres, int useUnitSymbols = 0);
-        float convMilesToKilometersAndPrint(float miles, int useUnitSymbols = 0);
-        float convYardsToMetersAndPrint(float yards, int useUnitSymbols = 0);
-        float convFeetToMetersAndPrint(float feet, int useUnitSymbols = 0);
-        float convInchesToCentimetresAndPrint(float inches, int useUnitSymbols = 0);
+        //Print the output of our calculations. Optionally use unit symbols
+        //IE character 'C' for Celsius as part of the output
+        //1 = enabled 0 or any other junk = disabled
+        void convAcresToHectaresAndPrint(float acres, int useUnitSymbols = 0);
+        void convMilesToKilometersAndPrint(float miles, int useUnitSymbols = 0);
+        void convYardsToMetersAndPrint(float yards, int useUnitSymbols = 0);
+        void convFeetToMetersAndPrint(float feet, int useUnitSymbols = 0);
+        void convInchesToCentimetresAndPrint(float inches, int useUnitSymbols = 0);
 
     private:
         float convAcresToHectares(float acres);
