@@ -21,7 +21,8 @@ void printUsageAndExit()
     std::cout << "  [-M <int>] - Convert meters to feet\n";
     std::cout << "  [-m <int>] - Convert meters to yards\n";
     std::cout << "  [-U] - Display unit symbols IE a 'C' for Celsius\n";
-    std::cout << "         Must be specified as third (3rd) argument.\n";
+    std::cout << "         Must be specified as third (3rd) argument,\n";
+    std::cout << "         unless reading from standard input\n";
     std::cout << "  [-u] - Same as above, but suppress info message.\n";
     std::cout << "  [-Y <int>] - Convert yards to meters\n";
     std::exit(0);
@@ -63,6 +64,17 @@ int main(int argc, char *argv[])
             _USE_UNIT_SYMBOLS = 1;
         }
         if (strcmp(argv[3], "-u") == 0) {
+            _USE_UNIT_SYMBOLS = 1;
+        }
+    }
+    //When reading from standard input,
+    //-U or -u becomes the second argument
+    if (argv[2] != nullptr) {
+        if (strcmp(argv[2], "-U") == 0) {
+            std::cout << "Info: Now displaying unit symbols\n";
+            _USE_UNIT_SYMBOLS = 1;
+        }
+        if (strcmp(argv[2], "-u") == 0) {
             _USE_UNIT_SYMBOLS = 1;
         }
     }
