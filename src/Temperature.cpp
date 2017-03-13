@@ -1,4 +1,4 @@
-#include "../../include/temperature/Temperature.h"
+#include "../include/Temperature.h"
 #include <iostream>
 
 float Temperature::convCelciusToFahr(float degreesC)

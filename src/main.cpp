@@ -1,6 +1,6 @@
-#include "include/temperature/Temperature.h"
-#include "include/measurement/metric/Metirc.h"
-#include "include/measurement/imperial/Imperial.h"
+#include "../include/Temperature.h"
+#include "../include/Metirc.h"
+#include "../include/Imperial.h"
 #include <iostream>
 #include <cstdlib>
 #include <string.h>
