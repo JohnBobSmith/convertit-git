@@ -2,9 +2,9 @@
 ## Convert between common systems of measurement
 
 ConvertIt! is a simple, command line application designed to allow users to convert between common systems and 
-units of measurement. For example, at this time you can convert Celsius to Fahrenheit or
-Metric to Imperial and the reverse (Imperial to Metric, Fahrenheit to Celsisu). This program has been designed around
-simplicity and ease of use. A copy of the help table is included below:
+units of measurement. For example, at this time you can convert Celsius to Fahrenheit or Metric to Imperial and 
+the reverse (Imperial to Metric, Fahrenheit to Celsisu). This program has been designed around simplicity and ease of use.
+A copy of the help table is included below:
 
 ConvertIt! Program usage:
 
@@ -44,10 +44,15 @@ For the most up to date table, run convertit -h at any time.
 
 ## Why ConvertIt! ?
 ConvertIt! was created because of a couple of reasons:
+
 1) I wanted to be able to convert outputs from other programs (more on that later).
-2) I wanted to be able to convert stuff without an internet connection. Why Google it when you can ./converit ?
+
+2) I wanted to be able to convert stuff without an internet connection. Why Google it when you can ./convertit ?
+
 3) I wanted to have conversions all in one place. This makes life easier to the user, in my opinion.
+
 4) I wanted a change from my game programming, and I thought that a utlity would be a great thing to write.
+
 
 ## Example usage
 Recalling point one from earlier, I wanted to be able to read standard input and convert the temperatures of the
