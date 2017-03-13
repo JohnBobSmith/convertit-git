@@ -7,21 +7,37 @@ Metric to Imperial and the reverse (Imperial to Metric, Fahrenheit to Celsisu). 
 simplicity and ease of use. A copy of the help table is included below:
 
 ConvertIt! Program usage:
+
   [-A <int>] - Convert acres to hectares
+  
   [-c <int>] - Convert centimeters to inches
+  
   [-C <int>] - Convert degrees Celsius to degrees Fahrenheit
+  
   [-F <int>] - Convert degrees Fahrenheit to degrees Celsius
+  
   [-h]       - Show this help and exit
+  
   [-H <int>] - Convert hectares to acres
+  
   [-i <int>] - Convert inches to centimeters
+  
   [-I <int>] - Convert feet to meters
+  
   [-K <int>] - Convert kilometers to miles
+  
   [-L <int>] - Convert miles to kilometers.
+  
   [-M <int>] - Convert meters to feet
+  
   [-m <int>] - Convert meters to yards
+  
   [-U] - Display unit symbols IE a 'C' for Celsius
+  
          Must be specified as third (3rd) argument.
+         
   [-u] - Same as above, but suppress info message.
+  
   [-Y <int>] - Convert yards to meters
 
 For the most up to date table, run convertit -h at any time.
@@ -38,12 +54,15 @@ Recalling point one from earlier, I wanted to be able to read standard input and
 hardware sensors from Celsius to Fahrenheit:
 
 [jbs@dmb-gaming-laptop Debug]$ inxi -Fxz | grep Temp
+
 Sensors:   System Temperatures: cpu: 40.2C mobo: N/A gpu: 39.0
+
 [jbs@dmb-gaming-laptop Debug]$ inxi -Fxz | grep Temp | cut -c 38-41 | ./convertit -C
+
 104.36[jbs@dmb-gaming-laptop Debug]$ 
 
-As we can see, we get an output of 104.36. ConvertIt!'s ouput is designed to be very clean, but one can optionally 
-pass -U or -u to add the unit symbols.
+As we can see, we get an output of 104.36. ConvertIt!'s ouput is designed to be very clean, omitting the 
+newline character deliberately. You can optionally pass -U or -u to add the unit symbols.
 
 ## License
 You are free to do whatever you want with this, subject to the MIT license.
