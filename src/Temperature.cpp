@@ -1,52 +1,35 @@
 #include "../include/Temperature.h"
+#include "../include/Conversions.h"
 #include <iostream>
 
 float Temperature::convCelsiusToFahr(float degreesC)
 {
-    //Ensure division by zero does not occur
-    if (degreesC == 0) {
-        return 32;
-    } else {
-        //Convert it!
-        float fahrenheit = degreesC * 9/5 + 32;
-        return fahrenheit;
-    }
+    return degreesC * fiveandnine::nineoverfive + temp::celsius::celisus;
 }
 
 float Temperature::convFahrToCelsius(float degreesF)
 {
-    //Ensure division by zero does not occur
-    if (degreesF == 0) {
-        return -17.78;
-    } else {
-        //Convert it!
-        float celsius = (degreesF - 32) * 5/9;
-        return celsius;
-    }
+    return (degreesF - temp::celsius::celisus) * fiveandnine::fiveovernine;
 }
 
 float Temperature::convKelvinToCelsius(float kelvins)
 {
-    float celsius = kelvins - 273.15;
-    return celsius;
+    return kelvins - temp::celsius::kCelsius;
 }
 
 float Temperature::convKelvinToFahr(float kelvins)
 {
-    float fahrenheit = kelvins * 9/5 - 456.67;
-    return fahrenheit;
+    return kelvins * fiveandnine::nineoverfive - temp::fahr::kFahrenheit;
 }
 
 float Temperature::convCelsiusToKelvin(float degreesC)
 {
-    float kelvins = degreesC + 273.15;
-    return kelvins;
+    return degreesC + temp::celsius::kCelsius;
 }
 
 float Temperature::convFahrToKelvin(float degreesF)
 {
-    float kelvins = (degreesF + 459.67) * 5/9;
-    return kelvins;
+    return (degreesF + temp::fahr::kFahrenheit) * fiveandnine::fiveovernine;
 }
 
 void Temperature::convCelsiusToFahrAndPrint(float degreesC, int useUnitSymbols)
