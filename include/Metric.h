@@ -7,11 +7,11 @@ class Metric
         //Print the output of our calculations. Optionally use unit symbols
         //IE character 'C' for Celsius as part of the output
         //1 = enabled 0 or any other junk = disabled
-        void convHectaresToAcresAndPrint(float hectares, int useUnitSymbols = 0);
-        void convKilometersToMilesAndPrint(float km, int useUnitSymbols = 0);
-        void convMetersToFeetAndPrint(float meters, int useUnitSymbols = 0);
-        void convMetersToYardsAndPrint(float meters, int useUnitSymbols = 0);
-        void convCentimetersToInchesAndPrint(float centimenters, int useUnitSymbols = 0);
+        void convHectaresToAcresAndPrint(float hectares, bool useUnitSymbols = false);
+        void convKilometersToMilesAndPrint(float km, bool useUnitSymbols = false);
+        void convMetersToFeetAndPrint(float meters, bool useUnitSymbols = false);
+        void convMetersToYardsAndPrint(float meters, bool useUnitSymbols = false);
+        void convCentimetersToInchesAndPrint(float centimenters, bool useUnitSymbols = false);
 
     private:
         float convHectaresToAcres(float hectares);

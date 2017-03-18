@@ -1,38 +1,38 @@
-#include "../include/Temperature.h"
 #include "../include/Conversions.h"
+#include "../include/Temperature.h"
 #include <iostream>
 
 float Temperature::convCelsiusToFahr(float degreesC)
 {
-    return degreesC * fiveandnine::nineoverfive + temp::celsius::celisus;
+    return degreesC * fiveandnine::nineoverfive + temp::celsius;
 }
 
 float Temperature::convFahrToCelsius(float degreesF)
 {
-    return (degreesF - temp::celsius::celisus) * fiveandnine::fiveovernine;
+    return (degreesF - temp::celsius) * fiveandnine::fiveovernine;
 }
 
 float Temperature::convKelvinToCelsius(float kelvins)
 {
-    return kelvins - temp::celsius::kCelsius;
+    return kelvins - temp::kCelsius;
 }
 
 float Temperature::convKelvinToFahr(float kelvins)
 {
-    return kelvins * fiveandnine::nineoverfive - temp::fahr::kFahrenheit;
+    return kelvins * fiveandnine::nineoverfive - temp::kFahrenheit;
 }
 
 float Temperature::convCelsiusToKelvin(float degreesC)
 {
-    return degreesC + temp::celsius::kCelsius;
+    return degreesC + temp::kCelsius;
 }
 
 float Temperature::convFahrToKelvin(float degreesF)
 {
-    return (degreesF + temp::fahr::kFahrenheit) * fiveandnine::fiveovernine;
+    return (degreesF + temp::kFahrenheit) * fiveandnine::fiveovernine;
 }
 
-void Temperature::convCelsiusToFahrAndPrint(float degreesC, int useUnitSymbols)
+void Temperature::convCelsiusToFahrAndPrint(float degreesC, bool useUnitSymbols)
 {
     float result = convCelsiusToFahr(degreesC);
     if (useUnitSymbols == 1) {
@@ -43,7 +43,7 @@ void Temperature::convCelsiusToFahrAndPrint(float degreesC, int useUnitSymbols)
     }
 }
 
-void Temperature::convFahrToCelsiusAndPrint(float degreesF, int useUnitSymbols)
+void Temperature::convFahrToCelsiusAndPrint(float degreesF, bool useUnitSymbols)
 {
     float result = convFahrToCelsius(degreesF);
     if (useUnitSymbols == 1) {
@@ -54,7 +54,7 @@ void Temperature::convFahrToCelsiusAndPrint(float degreesF, int useUnitSymbols)
     }
 }
 
-void Temperature::convKelvinToFahrAndPrint(float kelvins, int useUnitSymbols)
+void Temperature::convKelvinToFahrAndPrint(float kelvins, bool useUnitSymbols)
 {
     float result = convKelvinToFahr(kelvins);
     if (useUnitSymbols == 1) {
@@ -64,7 +64,7 @@ void Temperature::convKelvinToFahrAndPrint(float kelvins, int useUnitSymbols)
     }
 }
 
-void Temperature::convKelvinToCelsiusAndPrint(float kelvins, int useUnitSymbols)
+void Temperature::convKelvinToCelsiusAndPrint(float kelvins, bool useUnitSymbols)
 {
     float result = convKelvinToCelsius(kelvins);
     if (useUnitSymbols == 1) {
@@ -74,7 +74,7 @@ void Temperature::convKelvinToCelsiusAndPrint(float kelvins, int useUnitSymbols)
     }
 }
 
-void Temperature::convCelsiusToKelvinAndPrint(float degreesC, int useUnitSymbols)
+void Temperature::convCelsiusToKelvinAndPrint(float degreesC, bool useUnitSymbols)
 {
     float result = convCelsiusToKelvin(degreesC);
     if (useUnitSymbols == 1) {
@@ -84,7 +84,7 @@ void Temperature::convCelsiusToKelvinAndPrint(float degreesC, int useUnitSymbols
     }
 }
 
-void Temperature::convFahrToKelvinAndPrint(float degreesF, int useUnitSymbols)
+void Temperature::convFahrToKelvinAndPrint(float degreesF, bool useUnitSymbols)
 {
     float result = convFahrToKelvin(degreesF);
     if (useUnitSymbols) {

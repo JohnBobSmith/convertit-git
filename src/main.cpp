@@ -1,5 +1,5 @@
 #include "../include/Temperature.h"
-#include "../include/Metirc.h"
+#include "../include/Metric.h"
 #include "../include/Imperial.h"
 #include <iostream>
 #include <limits>
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 {
     //Display unit symbols, like C for Celsius,
     //as part of program output.
-    int _USE_UNIT_SYMBOLS = 0;
+    bool _USE_UNIT_SYMBOLS = false;
 
     //Our class objects
     Temperature temp;
@@ -92,7 +92,7 @@ int main(int argc, char **argv)
             metric.convMetersToYardsAndPrint(atoi(optarg), _USE_UNIT_SYMBOLS);
             break;
         case 'u':
-            _USE_UNIT_SYMBOLS = 1;
+            _USE_UNIT_SYMBOLS = true;
             break;
         case 'Y':
             imp.convYardsToMetersAndPrint(atoi(optarg), _USE_UNIT_SYMBOLS);

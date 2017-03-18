@@ -1,3 +1,4 @@
+#include "../include/Conversions.h"
 #include "../include/Imperial.h"
 #include <iostream>
 
@@ -35,7 +36,7 @@ float Imperial::convInchesToCentimetres(float inches)
     return cm;
 }
 
-void Imperial::convAcresToHectaresAndPrint(float acres, int useUnitSymbols)
+void Imperial::convAcresToHectaresAndPrint(float acres, bool useUnitSymbols)
 {
     float result = convAcresToHectares(acres);
     if (useUnitSymbols == 1) {
@@ -45,7 +46,7 @@ void Imperial::convAcresToHectaresAndPrint(float acres, int useUnitSymbols)
     }
 }
 
-void Imperial::convMilesToKilometersAndPrint(float miles, int useUnitSymbols)
+void Imperial::convMilesToKilometersAndPrint(float miles, bool useUnitSymbols)
 {
     float result = convMilesToKilometers(miles);
     if (useUnitSymbols == 1) {
@@ -55,7 +56,7 @@ void Imperial::convMilesToKilometersAndPrint(float miles, int useUnitSymbols)
     }
 }
 
-void Imperial::convYardsToMetersAndPrint(float yards, int useUnitSymbols)
+void Imperial::convYardsToMetersAndPrint(float yards, bool useUnitSymbols)
 {
     float result = convYardsToMeters(yards);
     if (useUnitSymbols == 1) {
@@ -65,7 +66,7 @@ void Imperial::convYardsToMetersAndPrint(float yards, int useUnitSymbols)
     }
 }
 
-void Imperial::convFeetToMetersAndPrint(float feet, int useUnitSymbols)
+void Imperial::convFeetToMetersAndPrint(float feet, bool useUnitSymbols)
 {
     float result = convFeetToMeters(feet);
     if (useUnitSymbols == 1) {
@@ -75,7 +76,7 @@ void Imperial::convFeetToMetersAndPrint(float feet, int useUnitSymbols)
     }
 }
 
-void Imperial::convInchesToCentimetresAndPrint(float inches, int useUnitSymbols)
+void Imperial::convInchesToCentimetresAndPrint(float inches, bool useUnitSymbols)
 {
     float result = convInchesToCentimetres(inches);
     if (useUnitSymbols == 1) {

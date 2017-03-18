@@ -1,4 +1,4 @@
-#include "../include/Metirc.h"
+#include "../include/Metric.h"
 #include <iostream>
 
 float Metric::convHectaresToAcres(float hectares)
@@ -43,7 +43,7 @@ float Metric::convCentimetersToInches(float centimenters)
     return inches;
 }
 
-void Metric::convHectaresToAcresAndPrint(float hectares, int useUnitSymbols)
+void Metric::convHectaresToAcresAndPrint(float hectares, bool useUnitSymbols)
 {
     float result = convHectaresToAcres(hectares);
     if (useUnitSymbols == 1) {
@@ -53,7 +53,7 @@ void Metric::convHectaresToAcresAndPrint(float hectares, int useUnitSymbols)
     }
 }
 
-void Metric::convKilometersToMilesAndPrint(float km, int useUnitSymbols)
+void Metric::convKilometersToMilesAndPrint(float km, bool useUnitSymbols)
 {
     float result = convKilometersToMiles(km);
     if (useUnitSymbols == 1) {
@@ -63,7 +63,7 @@ void Metric::convKilometersToMilesAndPrint(float km, int useUnitSymbols)
     }
 }
 
-void Metric::convMetersToFeetAndPrint(float meters, int useUnitSymbols)
+void Metric::convMetersToFeetAndPrint(float meters, bool useUnitSymbols)
 {
     float result = convMetersToFeet(meters);
     if (useUnitSymbols == 1) {
@@ -73,7 +73,7 @@ void Metric::convMetersToFeetAndPrint(float meters, int useUnitSymbols)
     }
 }
 
-void Metric::convMetersToYardsAndPrint(float meters, int useUnitSymbols)
+void Metric::convMetersToYardsAndPrint(float meters, bool useUnitSymbols)
 {
     float result = convMetersToYards(meters);
     if (useUnitSymbols == 1) {
@@ -83,7 +83,7 @@ void Metric::convMetersToYardsAndPrint(float meters, int useUnitSymbols)
     }
 }
 
-void Metric::convCentimetersToInchesAndPrint(float centimenters, int useUnitSymbols)
+void Metric::convCentimetersToInchesAndPrint(float centimenters, bool useUnitSymbols)
 {
     float result = convCentimetersToInches(centimenters);
     if (useUnitSymbols == 1) {

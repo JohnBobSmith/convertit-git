@@ -1,47 +1,45 @@
 #ifndef CONVERSIONS_H
 #define CONVERSIONS_H
 
-//Tables of conversions
+//"Table" of conversions
+//I find that namespaces work
+//quite well for this purpose.
 namespace imptometric
 {
-float hectare = 0.404685642;
-float kilometer = 1.609344;
-float yard = 0.9144;
-float meter = 0.3048;
-float centimeter = 2.54;
+extern float hectare;
+extern float kilometer;
+extern float yard;
+extern float meter;
+extern float centimeter;
 }
 
 namespace metrictoimp
 {
-float acre = 0.404685642;
-float mile = 0.62137;
-float feet = 3.2808;
-float yard = 1.0936;
-float inch = 2.54;
+extern float acre;
+extern float mile;
+extern float feet;
+extern float yard;
+extern float inch;
 }
 
 namespace temp
 {
-namespace fahr
-{
-float fahrenheit = 33.8;
-float kFahrenheit = -254.87;
-}
-namespace celsius
-{
-float celisus = 32;
-float kCelsius = 273.15;
-}
+extern float fahrenheit;
+extern float kFahrenheit;
+extern float celsius;
+extern float kCelsius;
 namespace kelvin
 {
-float celsius = 273.15;
-float fahrenheit = 459.67;
+extern float celsius;
+extern float fahrenheit;
 }
 }
 
+//For cases where we need to divide
+//5/9 or 9/5, use the decimal instead.
 namespace fiveandnine
 {
-float fiveovernine = 0.55555;
-float nineoverfive = 1.8;
+extern float fiveovernine;
+extern float nineoverfive;
 }
 #endif // CONVERSIONS_H
