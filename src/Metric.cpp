@@ -30,7 +30,7 @@ float Metric::convCentimetersToInches(float centimenters)
 void Metric::convHectaresToAcresAndPrint(float hectares, bool useUnitSymbols)
 {
     float result = convHectaresToAcres(hectares);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "ac";
     } else {
         std::cout << result;
@@ -40,7 +40,7 @@ void Metric::convHectaresToAcresAndPrint(float hectares, bool useUnitSymbols)
 void Metric::convKilometersToMilesAndPrint(float km, bool useUnitSymbols)
 {
     float result = convKilometersToMiles(km);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "mi";
     } else {
         std::cout << result;
@@ -50,7 +50,7 @@ void Metric::convKilometersToMilesAndPrint(float km, bool useUnitSymbols)
 void Metric::convMetersToFeetAndPrint(float meters, bool useUnitSymbols)
 {
     float result = convMetersToFeet(meters);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "ft";
     } else {
         std::cout << result;
@@ -60,7 +60,7 @@ void Metric::convMetersToFeetAndPrint(float meters, bool useUnitSymbols)
 void Metric::convMetersToYardsAndPrint(float meters, bool useUnitSymbols)
 {
     float result = convMetersToYards(meters);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "yd";
     } else {
         std::cout << result;
@@ -70,7 +70,7 @@ void Metric::convMetersToYardsAndPrint(float meters, bool useUnitSymbols)
 void Metric::convCentimetersToInchesAndPrint(float centimenters, bool useUnitSymbols)
 {
     float result = convCentimetersToInches(centimenters);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "in";
     } else {
         std::cout << result;

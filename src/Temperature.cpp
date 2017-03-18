@@ -35,7 +35,7 @@ float Temperature::convFahrToKelvin(float degreesF)
 void Temperature::convCelsiusToFahrAndPrint(float degreesC, bool useUnitSymbols)
 {
     float result = convCelsiusToFahr(degreesC);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         //Add 'F' to the output
         std::cout << result << "F";
     } else {
@@ -46,7 +46,7 @@ void Temperature::convCelsiusToFahrAndPrint(float degreesC, bool useUnitSymbols)
 void Temperature::convFahrToCelsiusAndPrint(float degreesF, bool useUnitSymbols)
 {
     float result = convFahrToCelsius(degreesF);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         //Add 'C' to the output
         std::cout << result << "C";
     } else {
@@ -57,7 +57,7 @@ void Temperature::convFahrToCelsiusAndPrint(float degreesF, bool useUnitSymbols)
 void Temperature::convKelvinToFahrAndPrint(float kelvins, bool useUnitSymbols)
 {
     float result = convKelvinToFahr(kelvins);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "F";
     } else {
         std::cout << result;
@@ -67,7 +67,7 @@ void Temperature::convKelvinToFahrAndPrint(float kelvins, bool useUnitSymbols)
 void Temperature::convKelvinToCelsiusAndPrint(float kelvins, bool useUnitSymbols)
 {
     float result = convKelvinToCelsius(kelvins);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "C";
     } else {
         std::cout << result;
@@ -77,7 +77,7 @@ void Temperature::convKelvinToCelsiusAndPrint(float kelvins, bool useUnitSymbols
 void Temperature::convCelsiusToKelvinAndPrint(float degreesC, bool useUnitSymbols)
 {
     float result = convCelsiusToKelvin(degreesC);
-    if (useUnitSymbols == 1) {
+    if (useUnitSymbols) {
         std::cout << result << "K";
     } else {
         std::cout << result;
