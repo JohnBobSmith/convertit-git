@@ -1,46 +1,30 @@
 #include "../include/Metric.h"
+#include "../include/Conversions.h"
 #include <iostream>
 
 float Metric::convHectaresToAcres(float hectares)
 {
-    //Do not divide by zero
-    if (hectares == 0) {
-        hectares = hectares + 0.1;
-    }
-    float acres = hectares / 0.404685642;
-    return acres;
+    return hectares / metrictoimp::acre;
 }
 
 float Metric::convKilometersToMiles(float km)
 {
-    float miles = km * 0.62137;
-    return miles;
+    return km * metrictoimp::mile;
 }
 
 float Metric::convMetersToFeet(float meters)
 {
-    //Do not divide by zero
-    if (meters == 0) {
-        meters = meters + 0.1;
-    }
-    float feet = meters / 3.2808;
-    return feet;
+    return meters / metrictoimp::feet;
 }
 
 float Metric::convMetersToYards(float meters)
 {
-    float yards = meters * 1.0936;
-    return yards;
+    return  meters * metrictoimp::yard;
 }
 
 float Metric::convCentimetersToInches(float centimenters)
 {
-    //Do not divide by zero
-    if (centimenters == 0) {
-        centimenters = centimenters + 0.1;
-    }
-    float inches = centimenters / 2.54;
-    return inches;
+    return centimenters / metrictoimp::inch;
 }
 
 void Metric::convHectaresToAcresAndPrint(float hectares, bool useUnitSymbols)
